@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO-Models</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="models/icon.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .centerbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 18rem;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            opacity: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto; /* Ensure the aspect ratio is maintained */
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #0d485b;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #0d485b;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #146580;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply fade-in animation on card */
+        .card:nth-child(odd) {
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(even) {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .navbar{
+          background-color: #0d485b;
+        }
+        .dropdown-menu{
+  background-color:#146580;
+}
+.nav-item a{
+  color: white;
+}
+
+.nav-link{
+ color:#146580;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #0d485b;
+}
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo"><a href="#"><img src="images/Logo_page-0001.png" alt="" height="40px" width="70px"></a></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index2.html">Home <img src="models/house-heart-fill.svg" alt=""></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact <img src="models/telephone-plus-fill.svg" alt="">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+                  <li><a class="dropdown-item" href="https://maps.app.goo.gl/kBVZxj2WTt5jJeZf8">Location <img src="models/geo-alt-fill.svg" alt=""></a></li>
+                  <li><a class="dropdown-item" href="contact.html">Service available</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+                </li>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+                  <li><a class="dropdown-item" href="https://maps.app.goo.gl/kBVZxj2WTt5jJeZf8">Location <img src="models/geo-alt-fill.svg" alt=""></a></li>
+                  <li><a class="dropdown-item" href="contact.html">Service available</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header end -->
+    <div class="centerbox">
+        <!-- Product card with enhanced CSS animations and styling -->
+        <div class="card">
+            <img src="models/Waterlily.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Water Lily</h5>
+                <p class="card-text">AQUA WATERLILY RO PURIFIER 12L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membrane + Post Carbon Filter, 24V 100GPT booster Pump, 24V SMPS Power Supply, Electrical Parts Warranty (1 Year) (Blue).</p>
+                <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="models/model2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aqua Jade</h5>
+              <p class="card-text">Aqua Jade RO PURIFIER 10L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membarance + Post Carbon Filter, 24V 100GPT booster Pump, 24V SMPS Power Supply,Electrical Parts Warrenty(1Year)</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="models/model3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aqua Dolphin</h5>
+              <p class="card-text">10L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membarance + Post Carbon Filter, 24V 100GPT booster Pump,24V SMPS Power Supply,Electrical Parts Warrenty(1Year)</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/model6.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Aqua Touch</h5>
+              <p class="card-text"> 12L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membarance + Post Carbon Filter, 24V 100GPT booster Pump,24V SMPS Power Supply,Electrical Parts Warrenty(1Year)</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/model5.png" class="card-img-top" height="280px" width="280px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AQUA XL</h5>
+              <p class="card-text">12L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membarance + Post Carbon Filter, 24V 100GPT booster Pump,24V SMPS Power Supply,Electrical Parts Warrenty(1Year)</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/Aqua-Mars-Black.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aqua Mars</h5>
+              <p class="card-text">10L RO + Spun Filter + Pre Carbon Filter + Sediment Filter + Membarance + Post Carbon Filter, 24V 100GPT booster Pump,24V SMPS Power Supply,Electrical Parts Warrenty(1Year) (Blue).</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/50L commercial RO.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">50 LPH COMMERCIAL RO</h5>
+              <p class="card-text"> RO PURIFIER 50LPH + 2 Spun Filter + GAC Filter + 4 RO Mebarance + Post Carbon Filter, 36V 100GPT Booster Pump, 36V SMPS Power Supply, Electrical Parts Warrenty(1Year).</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/ro-25-litre-per-hour-lph.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">25 LPH COMMERCIAL RO</h5>
+              <p class="card-text"> RO PURIFIER 25 LPH + 2 Spun Filter + GAC Filter + 2 RO Mebarance + Post Carbon Filter, 36V 100GPT Booster Pump, 36V SMPS Power Supply, Electrical Parts Warrenty(1Year).</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+        
+
+          <div class="card" style="width: 18rem;">
+            <img src="models/complete-ro-purifier-filter-service-kit.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">RO Filter Service Kit Available</h5>
+              <p class="card-text"> Complete Ro Purifier Filter Service kit Of 80 GPD Membrane Water With All Accessories</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/glass-line.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Solar Water Heater</h5>
+              <p class="card-text"> It is good Insulator of heat water remains hot for longer period.
+               + No rust possible Ensure no practicle stick bond or react with the inner tank surface.
+               + Suites to any Hardness water up to - 3000 PPM
+                + High Density PUF Cleaning</p>
+              <a href="contact.html" class="btn btn-primary">Click to Buy</a>
+            </div>
+          </div>
+
+
+        <!-- Add more product cards here with similar structure -->
+    </div>
+
+    <div class="bottom">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+           <p style="color: white;">Design & Developed Sriram T,B.Sc.CT,MBA <a href="">Contact</a></p>
+          </div>
+        </nav>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
